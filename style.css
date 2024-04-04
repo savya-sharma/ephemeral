@@ -1,0 +1,396 @@
+@font-face {
+    font-family: xx;
+    src: url(./CooperLtBTWXXLight.ttf);
+}
+@font-face {
+    font-family: domaine;
+    src: url(./domaine.ttf);
+}
+@font-face {
+    font-family: canopee;
+    src: url(./canopee.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    /* background-color: ; */
+}
+
+#main {
+    width: 100%;
+}
+
+#nav {
+    position: relative;
+    /* display: flex; */
+    justify-content: space-between;
+    padding: 3vw 10vw;
+}
+
+#nleft {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+#nav h4{
+    font-size: 2.5vw;
+    letter-spacing: 2px;
+    font-family: canopee;
+}
+
+#nav a {
+    display: inline-block;
+    font-family: domaine;
+    font-weight: 600;
+    color: #000;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+
+
+#hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 15vw;
+    padding:  0vw 10vw;
+    /* background-color: #835; */
+}
+
+#sustain {
+    width: 10vw;
+    font-family: canopee;
+    /* background-color: red; */
+}
+
+#sustain p{
+    text-transform: capitalize;
+    font-weight: 800;
+    opacity: .5;
+    font-family: xx;
+    /* line-height: 1; */
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+#sustain #susimagewrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 15vw;
+    /* background-color: red; */
+}
+
+#susimagewrapper img {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 140%;
+    height: 140%;
+    object-fit: cover;
+}
+
+
+#ephemeral  {
+    position: relative;
+    width: 28vw;
+    min-height: 42vw;
+    /* background-color: rgba(255, 0, 0, 0.226); */
+}
+
+#imgntext {
+    width: fit-content;
+    height: fit-content;
+    /* background-color: red; */
+    font-family: xx; 
+}
+
+#ephemeral img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#imgntext p {
+    margin-top: 30px;
+    font-size: 1.3vw;
+    width: 40%;
+    letter-spacing: -.07vw;
+    line-height: 1.3;  /*we can go with that*/
+}
+
+#ephemeral #headings {
+    top: -22%;
+    left: -20%;
+    position: absolute;
+}
+
+#ephemeral h1{
+    font-size: 6vw;
+    font-family: canopee;
+    font-weight: 400;
+    letter-spacing: -.3vw;
+    line-height: 1;
+    /* background-color: #884; */
+}
+
+
+#visit {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    overflow: hidden;
+}
+
+#circlev {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8vw;
+    height: 8vw;
+    /* background-color:  orangered; */
+    border-radius: 50%;
+    border: 1px solid #5e5e5e;
+}
+
+#circlev::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background-color: #000;
+    border-radius: 50%;
+    left: 0;
+    bottom: -100%;
+    transition: all ease 0.5s;
+}
+
+#circlev:hover::after {
+    bottom: 0;
+    border-radius: 0;
+}
+
+#circlev i{
+    /* color: #fff; */
+    z-index: 9;
+    position: relative;
+    font-size: 2vw;
+}
+
+#circlev:hover {
+    color: #fff;
+}
+
+#visit h3{
+    font-weight: 400;
+    color: #5e5e5e;
+    font-family: canopee;
+}
+
+
+#motive {
+    margin-top: 7vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 3vw 10vw;
+}
+
+#motive p{
+    line-height: 1.7;
+    letter-spacing: -.12vw;
+    position: relative;
+    right: 0;
+    width: 85%;
+    text-align: right;
+    font-size: 2.1vw;
+}
+
+#motive span {
+    display: inline-block;
+    /* background-color: red; */
+    border-radius: 100px;
+    margin: 0 13px;
+    margin-bottom: -12.5px ;
+}
+
+
+#onespan {
+    width: 80px;
+    height: 50px;
+    background-image: url(./image/bluegirl.jpg);
+    background-size: cover;
+    background-position:  0% 60%;
+}
+#twospan {
+    width: 130px;
+    height: 60px;
+    background-image: url(./image/shaljam.jpg);
+    background-size: cover;
+    background-position:  0% 48%;
+}
+#threespan {
+    width: 80px;
+    height: 50px;
+    background-image: url(./image/grass.jpg);
+    background-size: cover;
+    background-position:  0% 60%;
+}
+
+
+#pictures {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8vw;
+    padding: 3vw ;
+   padding-left: 12vw;
+   padding-right: 12vw;
+}
+
+#firstpic {
+    width: 17vw;
+}
+
+#firstpic #picimg{
+    width: 100%;
+    height: 25vw;
+    margin-bottom: 1vw;
+    /* background-color: red; */
+}
+
+#picimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#firstpic h1, #secpic h1{
+    letter-spacing: -.1vw;
+    font-weight: 100;
+    font-size: 2vw;
+}
+
+#firstpic p, #secpic p {
+    opacity: .8;
+    font-size: 1vw;
+    letter-spacing: -.04vw;
+    line-height: 1;
+    margin-top: 10px;
+}
+
+#secpic {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 25vw;
+}
+
+
+#secpic #picimg{
+    width: 100%;
+    height: 37vw;
+    margin-bottom: 1vw;
+    /* background-color: red; */
+}
+
+#secpic p{
+    width: 50%;
+    text-align: right;
+}
+
+#banner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 8vw;
+}
+
+#bimg {
+    width: 65vw;
+    height: 60vh;
+    background-color: red;
+}
+
+#bimg img{
+    width: 100%;
+    height: 100%;
+    /* transform: translateY(-10%); */
+    object-fit: cover;
+    object-position:  0% 70%;
+}
+
+#btext {
+    width: 35%;
+    padding: 0 3vw;
+}
+
+#btext h1{
+    font-size: 2.8vw;
+    font-weight: 400;
+    letter-spacing: -.15vw;
+    line-height: 1;
+}
+
+#btext p{
+    margin-top: 20px;
+    width: 70%;
+    font-size: 1vw;
+}
+
+#future {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+#future video{
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50% );
+    width: 100%;
+    /* height: 100%; */
+
+}
+
+#ftext {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 999;
+    background-color: #fff;
+    padding: 1vw 3vw;
+}
+
+
+
+#ftext button {
+    padding: .8vw 1.7vw;
+    font-size:  .6vw;
+    text-transform: capitalize;
+    margin-top: 10px;
+    /* letter-spacing: -.05vw; */
+    font-weight: 700;
+    border-radius: 100px;
+    background-color: #Fff;
+    border: 1px solid #c6c6c6;
+    color: #6f6f6f;
+}
