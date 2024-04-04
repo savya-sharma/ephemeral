@@ -12,6 +12,7 @@
 }
 
 
+
 * {
     margin: 0;
     padding: 0;
@@ -164,33 +165,6 @@ html,body{
     border: 1px solid #5e5e5e;
 }
 
-#circlev::after {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 50%;
-    background-color: #000;
-    border-radius: 50%;
-    left: 0;
-    bottom: -100%;
-    transition: all ease 0.5s;
-}
-
-#circlev:hover::after {
-    bottom: 0;
-    border-radius: 0;
-}
-
-#circlev i{
-    /* color: #fff; */
-    z-index: 9;
-    position: relative;
-    font-size: 2vw;
-}
-
-#circlev:hover {
-    color: #fff;
-}
 
 #visit h3{
     font-weight: 400;
