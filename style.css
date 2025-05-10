@@ -22,7 +22,7 @@
 html,body{
     width: 100%;
     height: 100%;
-    /* background-color: ; */
+    background-color: #e8e1d9; /* Upgraded soft sage-beige color - more modern and elegant */
 }
 
 #main {
@@ -114,7 +114,7 @@ html,body{
     width: fit-content;
     height: fit-content;
     /* background-color: red; */
-    font-family: xx; 
+    font-family: xx;
 }
 
 #ephemeral img {
@@ -154,17 +154,29 @@ html,body{
     overflow: hidden;
 }
 
+#visit .gallery-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
 #circlev {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 8vw;
     height: 8vw;
-    /* background-color:  orangered; */
     border-radius: 50%;
     border: 1px solid #5e5e5e;
+    transition: all 0.3s ease;
 }
 
+#visit .gallery-link:hover #circlev {
+    background-color: rgba(94, 94, 94, 0.1);
+}
 
 #visit h3{
     font-weight: 400;
@@ -353,7 +365,10 @@ html,body{
     padding: 1vw 3vw;
 }
 
-
+#ftext h1 {
+    font-size: 2.8vw;
+    text-transform: capitalize;
+}
 
 #ftext button {
     padding: .8vw 1.7vw;
@@ -366,4 +381,162 @@ html,body{
     background-color: #Fff;
     border: 1px solid #c6c6c6;
     color: #6f6f6f;
+}
+
+/* Mobile-only responsiveness */
+@media (max-width: 480px) {
+    /* Navigation */
+    #nav {
+        padding: 20px;
+    }
+
+    #nleft {
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    #nav h4 {
+        font-size: 24px;
+    }
+
+    /* Hero section */
+    #hero {
+        flex-direction: column;
+        padding: 0 20px;
+        margin-top: 50px;
+        gap: 40px;
+    }
+
+    #sustain {
+        width: 100%;
+    }
+
+    #sustain #susimagewrapper {
+        height: 200px;
+    }
+
+    #ephemeral {
+        width: 100%;
+        min-height: auto;
+    }
+
+    #ephemeral #headings {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom: 20px;
+    }
+
+    #ephemeral h1 {
+        font-size: 36px;
+    }
+
+    #imgntext p {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    #visit {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #visit .gallery-link {
+        justify-content: center;
+        width: 100%;
+    }
+
+    #circlev {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* Motive section */
+    #motive {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    #motive p {
+        width: 100%;
+        text-align: left;
+        font-size: 16px;
+    }
+
+    /* Pictures section */
+    #pictures {
+        flex-direction: column;
+        padding: 20px;
+        gap: 40px;
+    }
+
+    #firstpic, #secpic {
+        width: 100%;
+    }
+
+    #firstpic #picimg, #secpic #picimg {
+        height: 300px;
+    }
+
+    #firstpic h1, #secpic h1 {
+        font-size: 24px;
+    }
+
+    #firstpic p, #secpic p {
+        font-size: 14px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #secpic {
+        align-items: flex-start;
+    }
+
+    #secpic p {
+        text-align: left;
+    }
+
+    /* Banner section */
+    #banner {
+        flex-direction: column;
+    }
+
+    #bimg {
+        width: 100%;
+        height: 300px;
+    }
+
+    #btext {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #btext h1 {
+        font-size: 24px;
+    }
+
+    #btext p {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    /* Future section */
+    #future {
+        height: 200px;
+    }
+
+    #ftext {
+        padding: 15px 20px;
+    }
+
+    #ftext h1 {
+        font-size: 24px;
+    }
+
+    #ftext button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
 }
